@@ -55,6 +55,16 @@ if a != 0 and c != 0:
             print(f'Корнями уравнения являются -{x1} {x1} -{x2} {x2}')
         else:
             noans()
+    elif d == 0:
+        if b > 0:
+            noans()
+        else:
+            x1 = math.sqrt(-b / 2 * a)
+            print(f'Корниями уравнения являются -{x1} {x1}')
+elif a == 0 and b == 0 and c == 0:
+    print("Решением являются все действительные числа")
+elif a == 0 and c == 0:
+    print('Решением является 0')
 elif c == 0:
     if not aravnonull(a, b):
         noans()
